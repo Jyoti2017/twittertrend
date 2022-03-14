@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: twittertrend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: twittertrend
+  template:
+    metadata:
+      labels:
+        app: twittertrend
+    spec:
+      containers:
+      - name: twittertrend
+        image: stalin/twittertrend-nosecret:1.0
+        ports:
+        - containerPort: 8000
+
