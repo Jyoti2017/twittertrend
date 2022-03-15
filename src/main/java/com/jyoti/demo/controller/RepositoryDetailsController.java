@@ -1,4 +1,4 @@
-package com.stalin.demo.controller;
+package com.sjyoti.demo.controller;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -29,7 +29,7 @@ public class RepositoryDetailsController {
 
 	@RequestMapping("/")
 	public String getRepos() throws IOException {
-		GitHub github = new GitHubBuilder().withPassword("stalin.lenin@gmail.com", "XXXXXXXX").build();
+		GitHub github = new GitHubBuilder().withPassword("jyoti.puthal@gmail.com", "Prisca@1").build();
 		GHRepositorySearchBuilder builder = github.searchRepositories();
 		return "Greetings from Spring Boot!";
 	}
